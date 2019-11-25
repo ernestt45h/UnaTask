@@ -5,12 +5,24 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
+    user: {},
+    tasks: []
+  },
+  getters: {
+    getUser(state){
+      return state.user
+    },
+    getTasks(state){
+      return state.tasks
+    }
   },
   mutations: {
-
-  },
-  actions: {
-
+    setUser(state, payload){
+      state.user = payload
+    },
+    setTasks(state, payload){
+      state.tasks = payload
+      console.log(state.tasks)
+    }
   }
 })

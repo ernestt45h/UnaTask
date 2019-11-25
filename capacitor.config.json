@@ -1,0 +1,8 @@
+{
+  "appId": "com.quenginedev.unatask",
+  "appName": "UnaTask",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "cordova": {}
+}
